@@ -636,7 +636,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 800110747}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1722006412}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: confirmarNuevo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &800110747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,6 +850,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2780844461258839478, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 933211379}
+    - target: {fileID: 2780844461258839478, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AccionButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed513476a40f744689675e4e7864494, type: 3}
 --- !u!114 &933211377 stripped
@@ -856,6 +876,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2780844461258839473, guid: 1ed513476a40f744689675e4e7864494, type: 3}
   m_PrefabInstance: {fileID: 933211376}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &933211379 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5240700989123649271, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+  m_PrefabInstance: {fileID: 933211376}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459192bad01b4e146819da16b4d13c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &958357931 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2780844461258839473, guid: 1ed513476a40f744689675e4e7864494, type: 3}
@@ -870,6 +901,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &958357933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5240700989123649271, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+  m_PrefabInstance: {fileID: 2780844461677966362}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459192bad01b4e146819da16b4d13c16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1132372195
@@ -1102,6 +1144,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2780844461258839478, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1575461993}
+    - target: {fileID: 2780844461258839478, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AccionButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed513476a40f744689675e4e7864494, type: 3}
 --- !u!114 &1174893343 stripped
@@ -1179,7 +1229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1307066012
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1379,6 +1429,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405124335}
   m_CullTransparentMesh: 1
+--- !u!114 &1575461993 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5240700989123649271, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+  m_PrefabInstance: {fileID: 1174893342}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459192bad01b4e146819da16b4d13c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1652083786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,7 +1611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1703912909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1690,11 +1751,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33aecb5934d107444ad214c11f048f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listaJugadoresMenu: {fileID: 1307066011}
+  crearJugadorMenu: {fileID: 1703912908}
+  nombreJugador: {fileID: 1405124337}
   PlayerButons:
   - {fileID: 958357932}
   - {fileID: 933211377}
   - {fileID: 1174893343}
-  gameManager: {fileID: 0}
 --- !u!1 &1860708984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,6 +1905,14 @@ PrefabInstance:
     - target: {fileID: 2780844461258839473, guid: 1ed513476a40f744689675e4e7864494, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2780844461258839478, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 958357933}
+    - target: {fileID: 2780844461258839478, guid: 1ed513476a40f744689675e4e7864494, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AccionButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ed513476a40f744689675e4e7864494, type: 3}

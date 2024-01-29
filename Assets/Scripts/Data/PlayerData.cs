@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerData 
+public class PlayerData      //Estructura de lo que guarda el jugador
 {
-   public string Player;
-   public int Level;
+   public string Player;      //Nombre del jugador
+   public int Level;          //Nivel del minijuego
 }
