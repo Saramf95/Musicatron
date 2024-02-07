@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public PlayerData ActualPlayer;
     private void Awake()
     {
+        
         DontDestroyOnLoad(gameObject);
         DataManager dataManager = new DataManager();
         for (int i = 0; i < playerData.Length; i++)

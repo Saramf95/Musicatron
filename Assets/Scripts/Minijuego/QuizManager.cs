@@ -23,7 +23,6 @@ public class QuizManager : MonoBehaviour
         nAnswer++;
         if (nAnswer > 10)
         {
-
         }
         else
         {
@@ -36,6 +35,7 @@ public class QuizManager : MonoBehaviour
     {
 
         nAnswer++;
+        gm.ActualPlayer.CorrectasMManu++;
         if(nAnswer>10) {
 
         }

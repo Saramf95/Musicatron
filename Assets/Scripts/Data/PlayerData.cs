@@ -6,4 +6,5 @@ public class PlayerData      //Estructura de lo que guarda el jugador
 {
    public string Player;      //Nombre del jugador
    public int Level;          //Nivel del minijuego
+    public int CorrectasMManu;
 }

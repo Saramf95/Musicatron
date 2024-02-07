@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -53,8 +54,8 @@ public class MenuManager : MonoBehaviour
         gameManager.ActualPlayer = gameManager.playerData[cursorToCreate];
 
         dataManager.setDataPlayerFile(playerData, (NPlayer)cursorToCreate);
-
-        //CARGAR SIGUIENTE ESCENA
+        SceneManager.LoadScene("MinijuegoManu");
+        
 
     }
     // Update is called once per frame
