@@ -23,7 +23,8 @@ public class ButtonPlayer : MonoBehaviour
         {
             GameManager gm = FindObjectOfType<GameManager>();                  //Busca el game manager en la escena
             gm.ActualPlayer = gm.playerData[playerDataCursor];                 //Carga los datos del jugador
-            
+            SceneManager.LoadScene("MinijuegoManu");
+           
         }
     }
 }

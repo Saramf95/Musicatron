@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SeleccionPerdil(Manu).unity
     guid: 4bd52765a8bd7f941812f8265182164f
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoManu.unity
+    guid: 8f79bbee14933b04aa41f3049d2f8890
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c024bcff3acba09448211da13cd77986, type: 2}
