@@ -8,11 +8,35 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SeleccionPerdil(Manu).unity
     guid: 4bd52765a8bd7f941812f8265182164f
   - enabled: 1
     path: Assets/Scenes/MinijuegoManu.unity
     guid: 8f79bbee14933b04aa41f3049d2f8890
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/Ajustes.unity
+    guid: 605e54bf5d23aab41a28bb5bc97f8e7a
+  - enabled: 1
+    path: Assets/Scenes/Instrumentos.unity
+    guid: 04f7c6ec4f7024144acd2c884bcd215e
+  - enabled: 1
+    path: Assets/Scenes/Practica.unity
+    guid: b47e7234bf082b549b23e06697572c16
+  - enabled: 1
+    path: Assets/Scenes/SeleccionPerfil.unity
+    guid: e029b1ca83ec85643a4df772325a26c1
+  - enabled: 1
+    path: "Assets/Scenes/Selecci\xF3nTecnica.unity"
+    guid: 4fc6845ab88781f408cc7b803f3830a6
+  - enabled: 1
+    path: Assets/Scenes/Solfeo.unity
+    guid: a3d8c7b3e0c4ba24caa5dfa69dabec73
+  - enabled: 1
+    path: "Assets/Scenes/Teor\xEDa.unity"
+    guid: 96d080e31bfb2fc4c857fbc133dbd01c
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c024bcff3acba09448211da13cd77986, type: 2}

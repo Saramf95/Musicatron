@@ -54,7 +54,7 @@ public class MenuManager : MonoBehaviour
         gameManager.ActualPlayer = gameManager.playerData[cursorToCreate];
 
         dataManager.setDataPlayerFile(playerData, (NPlayer)cursorToCreate);
-        SceneManager.LoadScene("MinijuegoManu");
+        SceneManager.LoadScene("SelecciónTecnica");
         
 
     }
