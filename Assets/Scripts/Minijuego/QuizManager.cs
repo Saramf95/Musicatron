@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour             
 {
@@ -12,11 +13,13 @@ public class QuizManager : MonoBehaviour
     GameManager gm;
     public TMP_Text QuestionTxt;          //Texto de la pregunta.
     public int nAnswer=0;
+    public int nQuestion;
     private void Start()                          //
     {
         gm = FindObjectOfType<GameManager>();
         nAnswer = gm.ActualPlayer.Level;
-        generateQuestion(); 
+        generateQuestion();
+        nQuestion = 0; 
     }
     public void incorrect()
     {
@@ -68,6 +71,13 @@ public class QuizManager : MonoBehaviour
         audioSource.clip = QnA[currentQuestion].Question;
         ReproducirSonido();
         SetAnswers();
+        nQuestion = nQuestion++;
+        if (currentQuestion > 5)
+        {
+            Debug.Log("Superamos las 10 peguntas");
+            nQuestion = 0;
+            SceneManager.LoadScene("Practica");
+        }
     }
 
 
