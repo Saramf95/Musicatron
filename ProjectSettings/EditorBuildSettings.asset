@@ -38,5 +38,44 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Teor\xEDa.unity"
     guid: 96d080e31bfb2fc4c857fbc133dbd01c
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel3.unity
+    guid: c27b404b612cb834a8b85fb69c0385c2
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 12.unity
+    guid: 96584606dc5f698408a92e01b9335503
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 11.unity
+    guid: 9db604bb569826f4a83fe716973beb18
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 10.unity
+    guid: 2a61486dae9e38649a092a092e6597a9
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 9.unity
+    guid: 4c0df57494710af4d976130254d5cd45
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 8.unity
+    guid: b7706192561ea5945865d3f5b6f8dcae
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 7.unity
+    guid: 56266707f06de9e4d96b719b005a4172
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 6.unity
+    guid: d33950937dd5ae24c93f59dfb8bd41e3
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 5.unity
+    guid: 5c94bad81b7cbef49ad57b8b184e6cdb
+  - enabled: 1
+    path: Assets/Scenes/Unidades sobrantes/Nivel 4.unity
+    guid: 141f24598f9012e42afaac25c9c9f85d
+  - enabled: 1
+    path: Assets/Scenes/EscenaResultados.unity
+    guid: cf278602b0af85143aa5e87de49dae65
+  - enabled: 1
+    path: Assets/Scenes/Guitarra.unity
+    guid: ab3d207059ad601498cc497a91abfd16
+  - enabled: 1
+    path: Assets/Scenes/Unidad 1 solofeo.unity
+    guid: 69c4eb684a5d9ae4d98ca403a0264dc7
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c024bcff3acba09448211da13cd77986, type: 2}

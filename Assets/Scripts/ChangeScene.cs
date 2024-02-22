@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class changeScene : MonoBehaviour
 {
-   public void CambioEscena(string name)
+    public void Escenas(string CambioEscena)
     {
-        SceneManager.LoadScene(name);
+        SceneManager.LoadScene(CambioEscena);
     }
 }
