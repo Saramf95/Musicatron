@@ -8,16 +8,21 @@ public class GameManager : MonoBehaviour
     public PlayerData[] playerData = new PlayerData[3];
     [HideInInspector]
     public PlayerData ActualPlayer;
+    DataManager dataManager;
+    public int cursorPlayer;
     private void Awake()
     {
         
         DontDestroyOnLoad(gameObject);
-        DataManager dataManager = new DataManager();
+        dataManager = new DataManager();
         for (int i = 0; i < playerData.Length; i++)
         {
             playerData[i] = dataManager.getDataPlayerFile((NPlayer)i);
         }
     }
+    public void UpdateData()
+    {
+        dataManager.setDataPlayerFile(ActualPlayer, (NPlayer)cursorPlayer);
+    }
 
-    
 }

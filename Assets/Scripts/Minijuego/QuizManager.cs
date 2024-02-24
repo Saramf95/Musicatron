@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour             
 {
@@ -23,6 +24,7 @@ public class QuizManager : MonoBehaviour
         nAnswer++;
         if (nAnswer > 10)
         {
+            SceneManager.LoadScene("Inicio");
         }
         else
         {
