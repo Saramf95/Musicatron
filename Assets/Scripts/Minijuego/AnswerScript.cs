@@ -18,13 +18,12 @@ public class AnswerScript : MonoBehaviour
         {
             Debug.Log("Correct Answer");
             quizManager.correct();
-            Puntuacion.instance.SumarPuntos();
         }
         else
         {
             Debug.Log("Wrong Answer");
-            quizManager.correct();
-         
+            quizManager.incorrect();
+
 
         }
     }

@@ -10,27 +10,31 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;           //Almacena las notas, el array tiene que coincidir con la lista anterior.
     public int currentQuestion;           //Pregunta actual (la nota que está sonando)
     public AudioSource audioSource;       //Elemento que emite el sonido
-    GameManager gm;
+    public GameManager gm;
+    DataManager dataManager;
     public TMP_Text QuestionTxt;          //Texto de la pregunta.
     public int nAnswer=0;
-    public int nQuestion;
     private void Start()                          //
     {
         gm = FindObjectOfType<GameManager>();
         nAnswer = gm.ActualPlayer.Level;
-        generateQuestion();
-        nQuestion = 0; 
+        
+        generateQuestion(); 
     }
     public void incorrect()
     {
         nAnswer++;
-        if (nAnswer > 10)
+
+        if (nAnswer >= 10)
         {
+            SceneManager.LoadScene("Inicio");
         }
         else
         {
             gm.ActualPlayer.Level = nAnswer;
+            gm.dataManager.setDataPlayerFile(gm.ActualPlayer, (NPlayer)gm.ActualPlayerCursor);
             generateQuestion();
+
         }
     }
 
@@ -39,7 +43,8 @@ public class QuizManager : MonoBehaviour
 
         nAnswer++;
         gm.ActualPlayer.CorrectasMManu++;
-        if(nAnswer>10) {
+        gm.dataManager.setDataPlayerFile(gm.ActualPlayer, (NPlayer)gm.ActualPlayerCursor);
+        if (nAnswer>10) {
 
         }
         else
@@ -71,13 +76,6 @@ public class QuizManager : MonoBehaviour
         audioSource.clip = QnA[currentQuestion].Question;
         ReproducirSonido();
         SetAnswers();
-        nQuestion = nQuestion++;
-        if (currentQuestion > 5)
-        {
-            Debug.Log("Superamos las 10 peguntas");
-            nQuestion = 0;
-            SceneManager.LoadScene("Practica");
-        }
     }
 
 

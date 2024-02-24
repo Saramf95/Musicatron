@@ -10,21 +10,15 @@ public class Puntuacion : MonoBehaviour
     private int puntuacion;
     [SerializeField]
     private TextMeshProUGUI textoPuntuacion;
-
-
+    QuizManager quizManager;
     private void Awake()
     {
-        instance = this;
+        quizManager = FindObjectOfType<QuizManager>();
     }
 
-    public void SumarPuntos()
-    {
-        puntuacion++;
-        textoPuntuacion.text = "Puntuación: " + puntuacion.ToString();
-    }
 
-    public int GetPuntuacion()
+    private void Update()
     {
-        return puntuacion;
+        textoPuntuacion.text = " Pregunta N" + quizManager.nAnswer.ToString()+ "    Acertadas "+ quizManager.gm.ActualPlayer.CorrectasMManu;
     }
 }

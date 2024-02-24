@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static UnityEditor.Experimental.GraphView.GraphView;
+
 
 public class MenuManager : MonoBehaviour
 {
@@ -52,7 +52,7 @@ public class MenuManager : MonoBehaviour
         playerData.Player = nombreJugador.text; 
         gameManager.playerData[cursorToCreate] = playerData; 
         gameManager.ActualPlayer = gameManager.playerData[cursorToCreate];
-
+        gameManager.ActualPlayerCursor = cursorToCreate;
         dataManager.setDataPlayerFile(playerData, (NPlayer)cursorToCreate);
         SceneManager.LoadScene("SelecciónTecnica");
         
